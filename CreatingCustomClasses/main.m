@@ -29,6 +29,8 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"pet name is %@", petName);
         
+        [[p pet] speak];
+        
     }
     return 0;
 }

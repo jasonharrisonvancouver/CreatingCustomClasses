@@ -11,4 +11,9 @@
 @implementation Dog
 
 
+- (void)speak{
+    
+    NSLog(@"Woof");
+}
+
 @end
