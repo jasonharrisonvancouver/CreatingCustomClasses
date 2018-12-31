@@ -19,8 +19,15 @@ int main(int argc, const char * argv[]) {
         Dog *d = [[Dog alloc] init];
         [d setName: @"rocky"];
         
+        Dog *d2 = [[Dog alloc] init];
+        [d2 setName: @"snoopy"];
         
+        [p setPet: d];
+        [p setPet: d2];
         
+        NSString *petName = [[p pet] name];
+        
+        NSLog(@"pet name is %@", petName);
         
     }
     return 0;
