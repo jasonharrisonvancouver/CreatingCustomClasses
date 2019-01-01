@@ -13,13 +13,15 @@
 
 
 - (instancetype)initWithPet:(Dog *)thePet
-                    andName:(NSString *)theName{
+                    andName:(NSString *)theName
+                     andDoB:(NSDate *)theDoB{
     
     self = [super init];
     
     if(self){
         _pet = thePet;
         _name = theName;
+        _dateOfBirth = theDoB;
     }
     return self;
     

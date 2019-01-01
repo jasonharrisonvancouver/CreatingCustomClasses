@@ -18,14 +18,16 @@ int main(int argc, const char * argv[]) {
         Dog *d2 = [[Dog alloc] init];
         [d2 setName: @"snoopy"];
         
-     
+        NSDate *rightNow = [[NSDate alloc] init];
         
-        Person *newPerson = [[Person alloc] initWithPet:d2 andName:@"jason"];
+        Person *newPerson = [[Person alloc] initWithPet:d2
+                                                 andName:@"jason"
+                                                  andDoB: rightNow];
         
         NSString *petName = [[newPerson pet] name];
         NSLog(@"pet name is %@", petName);
         NSLog(@"person name is %@", [newPerson name]);
-        
+        NSLog(@"person's dob is %@", [newPerson dateOfBirth]);
         
     }
     return 0;

@@ -15,10 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString *name;
 @property Dog *pet;
+@property (readonly) NSDate *dateOfBirth;
 
 
 - (instancetype)initWithPet:(Dog *)thePet
-                    andName:(NSString *)theName;
+                    andName:(NSString *)theName
+                     andDoB:(NSDate *)theDoB;
 
 @end
 
