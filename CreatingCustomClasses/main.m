@@ -13,23 +13,19 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Person *p = [[Person alloc] init];
-        [p setName: @"jason"];
         
-        Dog *d = [[Dog alloc] init];
-        [d setName: @"rocky"];
         
         Dog *d2 = [[Dog alloc] init];
         [d2 setName: @"snoopy"];
         
-        [p setPet: d];
-        [p setPet: d2];
+     
         
-        NSString *petName = [[p pet] name];
+        Person *newPerson = [[Person alloc] initWithPet:d2 andName:@"jason"];
         
+        NSString *petName = [[newPerson pet] name];
         NSLog(@"pet name is %@", petName);
+        NSLog(@"person name is %@", [newPerson name]);
         
-        [[p pet] speak];
         
     }
     return 0;

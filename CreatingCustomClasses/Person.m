@@ -10,4 +10,18 @@
 
 @implementation Person
 
+
+
+- (instancetype)initWithPet:(Dog *)thePet
+                    andName:(NSString *)theName{
+    
+    self = [super init];
+    
+    if(self){
+        _pet = thePet;
+        _name = theName;
+    }
+    return self;
+    
+}
 @end

@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *name;
 @property Dog *pet;
 
+
+- (instancetype)initWithPet:(Dog *)thePet
+                    andName:(NSString *)theName;
+
 @end
 
 NS_ASSUME_NONNULL_END
